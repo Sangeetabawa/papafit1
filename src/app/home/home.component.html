@@ -1,0 +1,10 @@
+
+<section class="home">
+  <div class="container">
+    <mat-contacts [contacts]="contacts"
+                  [readonly]="false"
+                  (onContactAdded)="addContact($event)"
+                  (onContactRemoved)="removeContact($event)">
+    </mat-contacts>
+  </div>
+</section>
